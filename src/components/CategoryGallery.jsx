@@ -40,12 +40,10 @@ function CategoryGallery() {
 
   return (
     <div className="modern-carousel">
-      {/* Left arrow */}
       <button className="carousel-arrow left-arrow" onClick={prevSlide}>
         <HiOutlineChevronLeft size={30} />
       </button>
 
-      {/* Display images */}
       <div className="carousel-images">
         {data.map((item, idx) => {
           const position =
@@ -68,7 +66,6 @@ function CategoryGallery() {
         })}
       </div>
 
-      {/* Right arrow */}
       <button className="carousel-arrow right-arrow" onClick={nextSlide}>
         <HiOutlineChevronRight size={30} />
       </button>
