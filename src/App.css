@@ -166,18 +166,20 @@ p {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: none;
+  background-color: rgba(0, 0, 0, 0.6); /* Fond noir semi-transparent */
+  color: white;
+  font-size: 2.5rem;
   border: none;
   cursor: pointer;
   z-index: 10;
-  padding: 5px;
-  color: white; 
-  font-size: 2.5rem; 
-  transition: color 0.3s ease;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .carousel-arrow:hover {
-  color: #ccc; 
+  background-color: rgba(0, 0, 0, 0.8); /* Fond plus foncé au survol */
+  transform: translateY(-50%) scale(1.1); /* Légèrement agrandit au survol */
 }
 
 .left-arrow {
