@@ -7,13 +7,15 @@ import "../App.css";
 function CategoryGallery() {
   const { subcategory } = useParams();
 
-  // Correctly fetch data based on subcategory or top-level category
-  const data =
-    subcategory?.toLowerCase() in photos.landscapes
-      ? photos.landscapes[subcategory.toLowerCase()]
-      : subcategory === undefined
-      ? photos.portraits // Ensure `/gallery/portraits` fetches portraits
-      : photos["mini-evo"]; // Handle `/gallery/mini-evo`
+  // Utilisation de `let` pour permettre la modification de `data`
+  let data = subcategory
+    ? photos.landscapes[subcategory.toLowerCase()] || photos[subcategory.toLowerCase()]
+    : photos["portraits"];
+
+  // Vérifiez si la route est pour "mini-evo"
+  if (!subcategory && window.location.pathname.includes("mini-evo")) {
+    data = photos["mini-evo"];
+  }
 
   console.log("subcategory:", subcategory);
   console.log("data:", data);
