@@ -8,6 +8,7 @@ const AboutContainer = styled.div`
   height: 100vh;
   padding: 20px;
   background-color: #f9f9f9;
+  margin-right: 140px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -56,6 +57,11 @@ const AboutText = styled.div`
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  margin-left: 50px; /* Décalage vers la gauche */
+
+  @media (max-width: 768px) {
+    margin-left: 0; /* Réinitialisation pour mobile */
+  }
 
   h2 {
     font-size: 2rem; /* Reduced the size of the heading */
@@ -70,6 +76,26 @@ const AboutText = styled.div`
     color: #555;
     text-align: justify;
   }
+
+  .contact-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: normal; /* Pas de gras pour un look minimaliste */
+  color: black; /* Texte noir */
+  background-color: white; /* Fond blanc */
+  border: 1px solid black; /* Contour noir */
+  border-radius: 4px; /* Légèrement arrondi */
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Transition fluide pour le survol */
+
+  &:hover {
+    background-color: black; /* Fond noir au survol */
+    color: white; /* Texte blanc au survol */
+  }
+}
 `;
 
 const AboutPage = () => {
@@ -85,14 +111,13 @@ const AboutPage = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % photos.length);
-    }, 4000); // Change photo every 4 seconds
+    }, 4000); 
 
     return () => clearInterval(interval);
   }, [photos.length]);
 
   return (
     <AboutContainer>
-      {/* Photo Carousel */}
       <PhotoCarousel>
         {photos.map((photo, index) => (
           <img
@@ -104,7 +129,6 @@ const AboutPage = () => {
         ))}
       </PhotoCarousel>
 
-      {/* About Text */}
       <AboutText>
         <h2>Through My Lens</h2>
         <p>
@@ -114,6 +138,9 @@ const AboutPage = () => {
           friends, objects—I strive to capture life's fleeting moments and make
           them eternal through my lens.
         </p>
+        <a href="mailto:thepineapplegirlofficiel@gmail.com" className="contact-btn">
+            Contact Me
+          </a>
       </AboutText>
     </AboutContainer>
   );

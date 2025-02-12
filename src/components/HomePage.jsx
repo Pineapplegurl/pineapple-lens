@@ -1,11 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../App.css';
 
 function HomePage() {
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+
+  const images = [
+    '/images/une1.webp',
+    '/images/une2.webp', 
+  ];
+
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 5000); 
+
+    return () => clearInterval(interval); 
+  }, [images.length]);
+
   return (
     <div className="HomePage-container">
       <img
-        src="/images/une1.webp" 
+        src={images[currentImage]}
         alt="Good Films Make Your Life Better"
         className="HomePage-image"
       />

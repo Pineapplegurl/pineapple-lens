@@ -1,27 +1,28 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 // Styled Components
 const NavBarContainer = styled.nav`
-  background-color: #fff; /* Always white background */
-  color: #000; /* Always black text */
+  background-color: #fff;
+  color: #000;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative; /* Not sticky */
+  position: relative;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: #000; /* Text always black */
+    color: #000;
     text-decoration: none;
 
     &:hover {
-      color: #555; /* Lighter black on hover */
+      color: #555;
     }
   }
 
@@ -38,41 +39,40 @@ const NavBarContainer = styled.nav`
         text-decoration: none;
         font-size: 1.2rem;
         font-weight: bold;
-        color: #000; /* Text always black */
+        color: #000;
 
         &:hover {
-          color: #555; /* Lighter black on hover */
+          color: #555;
         }
       }
     }
-  }
-
-  .menu-icon {
-    display: none;
 
     @media (max-width: 768px) {
-      display: block;
-      cursor: pointer;
-    }
-  }
-
-  @media (max-width: 768px) {
-    ul {
       flex-direction: column;
-      background-color: #fff; /* Always white background for mobile menu */
+      background-color: #fff;
       position: absolute;
       top: 60px;
       right: 0;
       width: 100%;
       padding: 20px 0;
       display: ${({ $menuOpen }) => ($menuOpen ? "flex" : "none")};
-      z-index: 1000;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
 
       li {
         margin: 10px 0;
         text-align: center;
       }
+    }
+  }
+
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      display: block;
+      font-size: 1.8rem;
     }
   }
 `;
@@ -91,6 +91,11 @@ const NavBar = () => {
         >
           The Pineapple Lens
         </a>
+      </div>
+
+      {/* Hamburger Menu Icon */}
+      <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <FaTimes /> : <FaBars />}
       </div>
 
       {/* Menu Links */}

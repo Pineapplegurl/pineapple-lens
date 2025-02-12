@@ -8,7 +8,7 @@ function GalleryPage() {
     { name: 'Slovenia', path: '/gallery/landscapes/slovenia', image: '/images/landscapes/slovenia/slo5.webp' },
     { name: 'France', path: '/gallery/landscapes/france', image: '/images/landscapes/france/france1.webp' },
     { name: 'Spain', path: '/gallery/landscapes/spain', image: '/images/landscapes/spain/madrid1.webp' },
-    { name: 'Portraits', path: '/gallery/portraits', image: '/images/portraits/portrait1.webp' }, // Chemin corrigé pour portraits
+    { name: 'Portraits', path: '/gallery/portraits', image: '/images/portraits/portrait1.webp' }, 
     { name: 'Mini Evo', path: '/gallery/mini-evo', image: '/images/mini-evo/mini1.webp' },
   ];
 
