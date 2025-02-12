@@ -1,0 +1,70 @@
+{
+    "landscapes": {
+      "slovenia": [
+      { "url": "/images/landscapes/slovenia/slo1.webp", "alt": "Paysage Slovénie 1" },
+      { "url": "/images/landscapes/slovenia/slo2.webp", "alt": "Paysage Slovénie 2" },
+      { "url": "/images/landscapes/slovenia/slo3.webp", "alt": "Paysage Slovénie 3" },
+      { "url": "/images/landscapes/slovenia/slo4.webp", "alt": "Paysage Slovénie 4" },
+      { "url": "/images/landscapes/slovenia/slo5.webp", "alt": "Paysage Slovénie 5" },
+      { "url": "/images/landscapes/slovenia/slo6.webp", "alt": "Paysage Slovénie 6" },
+      { "url": "/images/landscapes/slovenia/slo7.webp", "alt": "Paysage Slovénie 7" },
+      { "url": "/images/landscapes/slovenia/slo8.webp", "alt": "Paysage Slovénie 8" },
+      { "url": "/images/landscapes/slovenia/slo9.webp", "alt": "Paysage Slovénie 9" },
+      { "url": "/images/landscapes/slovenia/slo10.webp", "alt": "Paysage Slovénie 10" },
+      { "url": "/images/landscapes/slovenia/slo11.webp", "alt": "Paysage Slovénie 11" },
+      { "url": "/images/landscapes/slovenia/slo12.webp", "alt": "Paysage Slovénie 12" },
+      { "url": "/images/landscapes/slovenia/slo13.webp", "alt": "Paysage Slovénie 13" },
+      { "url": "/images/landscapes/slovenia/slo14.webp", "alt": "Paysage Slovénie 14" },
+      { "url": "/images/landscapes/slovenia/slo15.webp", "alt": "Paysage Slovénie 15" },
+      { "url": "/images/landscapes/slovenia/slo16.webp", "alt": "Paysage Slovénie 16" },
+      { "url": "/images/landscapes/slovenia/slo17.webp", "alt": "Paysage Slovénie 17" },
+      { "url": "/images/landscapes/slovenia/slo18.webp", "alt": "Paysage Slovénie 18" }
+    ],
+      "tunisia": [
+        { "url": "/images/landscapes/tunisia/tunisie2.webp", "alt": "Paysage Tunisie 2" },
+        { "url": "/images/landscapes/tunisia/tunisie3.webp", "alt": "Paysage Tunisie 3" },
+        { "url": "/images/landscapes/tunisia/tunisie4.webp", "alt": "Paysage Tunisie 4" },
+        { "url": "/images/landscapes/tunisia/tunisie5.webp", "alt": "Paysage Tunisie 5" }
+      ],
+      "france": [
+        { "url": "/images/landscapes/france/france1.webp", "alt": "Paysage France 1" },
+        { "url": "/images/landscapes/france/france2.webp", "alt": "Paysage France 2" },
+        { "url": "/images/landscapes/france/france3.webp", "alt": "Paysage France 3" },
+        { "url": "/images/landscapes/france/france4.webp", "alt": "Paysage France 4" },
+        { "url": "/images/landscapes/france/france5.webp", "alt": "Paysage France 5" },
+        { "url": "/images/landscapes/france/france6.webp", "alt": "Paysage France 6" },
+        { "url": "/images/landscapes/france/france7.webp", "alt": "Paysage France 7" },
+        { "url": "/images/landscapes/france/france8.webp", "alt": "Paysage France 8" },
+        { "url": "/images/landscapes/france/france9.webp", "alt": "Paysage France 9" },
+        { "url": "/images/landscapes/france/france10.webp", "alt": "Paysage France 10" },
+        { "url": "/images/landscapes/france/france11.webp", "alt": "Paysage France 11" },
+        { "url": "/images/landscapes/france/france12.webp", "alt": "Paysage France 12" }
+      ],
+      "spain": [
+        { "url": "/images/landscapes/spain/madrid1.webp", "alt": "Paysage Madrid 1" },
+        { "url": "/images/landscapes/spain/madrid2.webp", "alt": "Paysage Madrid 2" }
+      ]
+    },
+    "portraits": [
+        
+        { "url": "/images/portraits/portrait8.webp", "alt": "Portrait 8" },
+        { "url": "/images/portraits/portrait6.webp", "alt": "Portrait 6" },
+        { "url": "/images/portraits/portrait7.webp", "alt": "Portrait 7" },
+        { "url": "/images/portraits/portrait4.webp", "alt": "Portrait 5" },
+        { "url": "/images/portraits/portrait5.webp", "alt": "Portrait 6" },
+        { "url": "/images/portraits/portrait2.webp", "alt": "Portrait 2" },
+        { "url": "/images/portraits/portrait3.webp", "alt": "Portrait 3" },
+        { "url": "/images/portraits/portrait1.webp", "alt": "Portrait 1" },
+        { "url": "/images/portraits/portrait10.webp", "alt": "Portrait 11" }
+
+    ],
+
+    "mini-evo": [
+        
+        { "url": "/images/mini-evo/mini3.webp", "alt": "mini 3" },
+        { "url": "/images/mini-evo/mini2.webp", "alt": "mini 2" },
+        { "url": "/images/mini-evo/mini1.webp", "alt": "mini 1" },
+        { "url": "/images/mini-evo/mini4.webp", "alt": "mini 4" }
+
+    ]
+  }
