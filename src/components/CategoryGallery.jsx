@@ -7,12 +7,10 @@ import "../App.css";
 function CategoryGallery() {
   const { subcategory } = useParams();
 
-  // Utilisation de `let` pour permettre la modification de `data`
   let data = subcategory
     ? photos.landscapes[subcategory.toLowerCase()] || photos[subcategory.toLowerCase()]
     : photos["portraits"];
 
-  // Vérifiez si la route est pour "mini-evo"
   if (!subcategory && window.location.pathname.includes("mini-evo")) {
     data = photos["mini-evo"];
   }
