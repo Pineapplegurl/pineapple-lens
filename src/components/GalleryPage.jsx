@@ -11,7 +11,6 @@ function GalleryPage() {
     { name: 'Portraits', path: '/gallery/portraits', image: '/images/portraits/portrait1.webp' }, 
     { name: 'Mini Evo', path: '/gallery/mini-evo', image: '/images/mini-evo/mini1.webp' },
   ];
-
   return (
     <div className="gallery-page p-4">
       <h2 className="text-3xl font-bold mb-4">A Journey Through My Lens</h2>
