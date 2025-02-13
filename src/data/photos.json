@@ -18,7 +18,9 @@
       { "url": "/images/landscapes/slovenia/slo15.webp", "alt": "Paysage Slovénie 15" },
       { "url": "/images/landscapes/slovenia/slo16.webp", "alt": "Paysage Slovénie 16" },
       { "url": "/images/landscapes/slovenia/slo17.webp", "alt": "Paysage Slovénie 17" },
-      { "url": "/images/landscapes/slovenia/slo18.webp", "alt": "Paysage Slovénie 18" }
+      { "url": "/images/landscapes/slovenia/slo18.webp", "alt": "Paysage Slovénie 18" },
+      { "url": "/images/landscapes/slovenia/slo19.webp", "alt": "Paysage Slovénie 19" }
+      
     ],
       "tunisia": [
         { "url": "/images/landscapes/tunisia/tunisie2.webp", "alt": "Paysage Tunisie 2" },
@@ -56,7 +58,11 @@
         { "url": "/images/portraits/portrait2.webp", "alt": "Portrait 2" },
         { "url": "/images/portraits/portrait3.webp", "alt": "Portrait 3" },
         { "url": "/images/portraits/portrait1.webp", "alt": "Portrait 1" },
-        { "url": "/images/portraits/portrait10.webp", "alt": "Portrait 11" }
+        { "url": "/images/portraits/portrait10.webp", "alt": "Portrait 11" },
+        { "url": "/images/portraits/portrait12.webp", "alt": "Portrait 12" },
+        { "url": "/images/portraits/portrait13.webp", "alt": "Portrait 13" },
+        { "url": "/images/portraits/portrait14.webp", "alt": "Portrait 14" },
+        { "url": "/images/portraits/portrait15.webp", "alt": "Portrait 15" }
 
     ],
 

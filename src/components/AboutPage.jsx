@@ -8,12 +8,12 @@ const AboutContainer = styled.div`
   height: 100vh;
   padding: 20px;
   background-color: #f9f9f9;
-  margin-right: 140px;
   @media (max-width: 768px) {
-    flex-direction: column;
+    flex-direction: column-reverse; /* Place PhotoCarousel at the bottom */
     height: auto;
   }
 `;
+
 const PhotoCarousel = styled.div`
   flex: 1;
   display: flex;
@@ -25,11 +25,14 @@ const PhotoCarousel = styled.div`
   @media (max-width: 768px) {
     margin-right: 0;
     margin-bottom: 20px;
-    height: auto;
+    height: 300px; /* Set a fixed height for smaller screens */
+  }
+  @media (max-width: 480px) {
+    height: 200px; /* Set a smaller fixed height for very small screens */
   }
   img {
-    max-width: 120%; /* Enlarged the width of the photos */
-    max-height: 100%; /* Enlarged the height of the photos */
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 10px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
     object-fit: cover;
@@ -43,6 +46,7 @@ const PhotoCarousel = styled.div`
     opacity: 1;
   }
 `;
+
 const AboutText = styled.div`
   flex: 1;
   max-width: 400px;
@@ -67,24 +71,25 @@ const AboutText = styled.div`
     text-align: justify;
   }
   .contact-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 8px 16px;
-  font-size: 1rem;
-  font-weight: normal; /* Pas de gras pour un look minimaliste */
-  color: black; /* Texte noir */
-  background-color: white; /* Fond blanc */
-  border: 1px solid black; /* Contour noir */
-  border-radius: 4px; /* Légèrement arrondi */
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.3s ease; /* Transition fluide pour le survol */
-  &:hover {
-    background-color: black; /* Fond noir au survol */
-    color: white; /* Texte blanc au survol */
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: normal; /* Pas de gras pour un look minimaliste */
+    color: black; /* Texte noir */
+    background-color: white; /* Fond blanc */
+    border: 1px solid black; /* Contour noir */
+    border-radius: 4px; /* Légèrement arrondi */
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Transition fluide pour le survol */
+    &:hover {
+      background-color: black; /* Fond noir au survol */
+      color: white; /* Texte blanc au survol */
+    }
   }
-}
 `;
+
 const AboutPage = () => {
   const photos = [
     "/images/une5.webp",
@@ -101,16 +106,6 @@ const AboutPage = () => {
   }, [photos.length]);
   return (
     <AboutContainer>
-      <PhotoCarousel>
-        {photos.map((photo, index) => (
-          <img
-            key={index}
-            src={photo}
-            alt={`Me ${index + 1}`}
-            className={currentIndex === index ? "active" : "hidden"}
-          />
-        ))}
-      </PhotoCarousel>
       <AboutText>
         <h2>Through My Lens</h2>
         <p>
@@ -121,10 +116,21 @@ const AboutPage = () => {
           them eternal through my lens.
         </p>
         <a href="mailto:thepineapplegirlofficiel@gmail.com" className="contact-btn">
-            Contact Me
-          </a>
+          Contact Me
+        </a>
       </AboutText>
+      <PhotoCarousel>
+        {photos.map((photo, index) => (
+          <img
+            key={index}
+            src={photo}
+            alt={`Me ${index + 1}`}
+            className={currentIndex === index ? "active" : "hidden"}
+          />
+        ))}
+      </PhotoCarousel>
     </AboutContainer>
   );
 };
+
 export default AboutPage;
