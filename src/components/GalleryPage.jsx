@@ -4,11 +4,12 @@ import '../App.css';
 
 function GalleryPage() {
   const categories = [
-    { name: 'Tunisia', path: '/gallery/landscapes/tunisia', image: '/images/landscapes/tunisia/tunisie5.webp' },
+    { name: 'Morocco', path: '/gallery/landscapes/morocco', image: '/images/landscapes/morocco/maroc8.webp' },
+    { name: 'Tunisia', path: '/gallery/landscapes/tunisia', image: '/images/landscapes/tunisia/tunisie8.webp' },
     { name: 'Slovenia', path: '/gallery/landscapes/slovenia', image: '/images/landscapes/slovenia/slo5.webp' },
     { name: 'France', path: '/gallery/landscapes/france', image: '/images/landscapes/france/france1.webp' },
     { name: 'Spain', path: '/gallery/landscapes/spain', image: '/images/landscapes/spain/madrid1.webp' },
-    { name: 'Portraits', path: '/gallery/portraits', image: '/images/portraits/portrait1.webp' }, 
+    { name: 'Portraits', path: '/gallery/portraits', image: '/images/portraits/portrait17.webp' }, 
     { name: 'Mini Evo', path: '/gallery/mini-evo', image: '/images/mini-evo/mini1.webp' },
   ];
   return (

@@ -27,7 +27,13 @@
         { "url": "/images/landscapes/tunisia/tunisie3.webp", "alt": "Paysage Tunisie 3" },
         { "url": "/images/landscapes/tunisia/tunisie4.webp", "alt": "Paysage Tunisie 4" },
         { "url": "/images/landscapes/tunisia/tunisie5.webp", "alt": "Paysage Tunisie 5" },
-        { "url": "/images/landscapes/tunisia/tunisie6.webp", "alt": "Paysage Tunisie 6" }
+        { "url": "/images/landscapes/tunisia/tunisie6.webp", "alt": "Paysage Tunisie 6" },
+        { "url": "/images/landscapes/tunisia/tunisie7.webp", "alt": "Paysage Tunisie 7" },
+        { "url": "/images/landscapes/tunisia/tunisie8.webp", "alt": "Paysage Tunisie 8" },
+        { "url": "/images/landscapes/tunisia/tunisie9.webp", "alt": "Paysage Tunisie 9" },
+        { "url": "/images/landscapes/tunisia/tunisie10.webp", "alt": "Paysage Tunisie 10" },
+        { "url": "/images/landscapes/tunisia/tunisie11.webp", "alt": "Paysage Tunisie 11" }
+
       ],
       "france": [
         { "url": "/images/landscapes/france/france1.webp", "alt": "Paysage France 1" },
@@ -41,11 +47,18 @@
         { "url": "/images/landscapes/france/france9.webp", "alt": "Paysage France 9" },
         { "url": "/images/landscapes/france/france10.webp", "alt": "Paysage France 10" },
         { "url": "/images/landscapes/france/france11.webp", "alt": "Paysage France 11" },
-        { "url": "/images/landscapes/france/france12.webp", "alt": "Paysage France 12" }
+        { "url": "/images/landscapes/france/france12.webp", "alt": "Paysage France 12" },
+        { "url": "/images/landscapes/france/france13.webp", "alt": "Paysage France 13" },
+        { "url": "/images/landscapes/france/france14.webp", "alt": "Paysage France 14" }
       ],
       "spain": [
         { "url": "/images/landscapes/spain/madrid1.webp", "alt": "Paysage Madrid 1" },
-        { "url": "/images/landscapes/spain/madrid2.webp", "alt": "Paysage Madrid 2" }
+        { "url": "/images/landscapes/spain/madrid2.webp", "alt": "Paysage Madrid 2" },
+        { "url": "/images/landscapes/spain/madrid3.webp", "alt": "Paysage Madrid 3" },
+        { "url": "/images/landscapes/spain/madrid4.webp", "alt": "Paysage Madrid 4" },
+        { "url": "/images/landscapes/spain/madrid5.webp", "alt": "Paysage Madrid 5" },
+        { "url": "/images/landscapes/spain/madrid6.webp", "alt": "Paysage Madrid 6" }
+  
       ]
     },
     "portraits": [
@@ -62,10 +75,25 @@
         { "url": "/images/portraits/portrait12.webp", "alt": "Portrait 12" },
         { "url": "/images/portraits/portrait13.webp", "alt": "Portrait 13" },
         { "url": "/images/portraits/portrait14.webp", "alt": "Portrait 14" },
-        { "url": "/images/portraits/portrait15.webp", "alt": "Portrait 15" }
+        { "url": "/images/portraits/portrait15.webp", "alt": "Portrait 15" },
+        { "url": "/images/portraits/portrait16.webp", "alt": "Portrait 16" },
+        { "url": "/images/portraits/portrait17.webp", "alt": "Portrait 17" },
+        { "url": "/images/portraits/portrait18.webp", "alt": "Portrait 18" }
 
     ],
+    "morocco" : [
+      { "url": "/images/landscapes/morocco/maroc1.webp", "alt": "Paysage Maroc 1" },
+      { "url": "/images/landscapes/morocco/maroc2.webp", "alt": "Paysage Maroc 2" },
+      { "url": "/images/landscapes/morocco/maroc3.webp", "alt": "Paysage Maroc 3" },
+      { "url": "/images/landscapes/morocco/maroc4.webp", "alt": "Paysage Maroc 4" },
+      { "url": "/images/landscapes/morocco/maroc5.webp", "alt": "Paysage Maroc 5" },
+      { "url": "/images/landscapes/morocco/maroc6.webp", "alt": "Paysage Maroc 6" },
+      { "url": "/images/landscapes/morocco/maroc7.webp", "alt": "Paysage Maroc 7" },
+      { "url": "/images/landscapes/morocco/maroc8.webp", "alt": "Paysage Maroc 8" },
+      { "url": "/images/landscapes/morocco/maroc9.webp", "alt": "Paysage Maroc 9" },
+      { "url": "/images/landscapes/morocco/maroc10.webp", "alt": "Paysage Maroc 10" }
 
+    ],
     "mini-evo": [
         
         { "url": "/images/mini-evo/mini3.webp", "alt": "mini 3" },

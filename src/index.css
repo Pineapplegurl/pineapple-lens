@@ -15,3 +15,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Garde l'application sur la hauteur totale */
+  overflow-x: hidden; /* Empêche tout défilement horizontal inutile */
+}
+
+#root {
+  min-height: 100vh; /* Le conteneur principal doit occuper toute la hauteur */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligne les éléments vers le haut */
+}
