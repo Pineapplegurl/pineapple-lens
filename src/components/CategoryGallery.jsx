@@ -8,11 +8,11 @@ import "swiper/css/pagination";
 import photos from "../data/photos.json";
 import "../App.css";
 import "../CategoryGallery.css";
+import AdSlide from "./AdSlide"; // Import du composant AdSlide
 
 function CategoryGallery() {
   const { subcategory } = useParams();
 
-  // Récupération des données en fonction de la sous-catégorie ou catégorie principale
   const data = subcategory
     ? photos.landscapes[subcategory.toLowerCase()] || photos[subcategory.toLowerCase()]
     : window.location.pathname.includes("mini-evo")
@@ -27,67 +27,61 @@ function CategoryGallery() {
     );
   }
 
-  const getTitle = (subcategory) => {
-    switch (subcategory?.toLowerCase()) {
-      case "slovenia":
-        return "Slovenia : A Land of Wonders";
-      case "tunisia":
-        return "Tunisia : From Sandy Shores to Rich Culture";
-      case "spain":
-        return "Spain : Vibrant Colors and Timeless Charm";
-      case "mini-evo":
-        return "Mini Evo : A Vintage Treasure";
-      case "morocco":
-        return "It's not beautiful, it's just Morocco";  
-      case "france":
-        return "France : Where Romance Meets Adventure";
-      case "portraits":
-        return "Portraits : A Glimpse into the Soul";  
-      default:
-        return "Mini Evo : A Vintage Treasure";
-    }
-  };
+  // Ajout de publicités après chaque 4 photos
+  const interleavedSlides = data.flatMap((image, idx) =>
+    (idx + 1) % 4 === 0
+      ? [
+          image,
+          { isAd: true, id: `ad-${idx}` }, // Place un objet "publicité"
+        ]
+      : [image]
+  );
+
   return (
     <div className="gallery-container">
       <h1 className="gallery-title">
-        {getTitle(subcategory)}
+        Explore the Stunning Beauty of {subcategory?.toUpperCase() || "Portraits"}
       </h1>
       <div className="swiper-container">
         <Swiper
           modules={[Navigation, Pagination]}
-          spaceBetween={20} // Espace esthétique entre les images
-          slidesPerView={"auto"} // Permet de scroller horizontalement
-          centeredSlides={true} // Centre la vue sur une image
+          spaceBetween={20}
+          slidesPerView={"auto"}
+          centeredSlides={true}
           pagination={{ clickable: true }}
-          navigation // Active les flèches
-          loop={true} // Boucle infinie
-          grabCursor={true} // Change le curseur pour l'effet de drag
+          navigation
+          loop={true}
+          grabCursor={true}
           style={{
             width: "85%",
             margin: "0 auto",
           }}
         >
-          {data.map((image, idx) => (
+          {interleavedSlides.map((item, idx) => (
             <SwiperSlide
-              key={idx}
+              key={item.isAd ? item.id : idx}
               style={{
-                width: "auto", // Conserve la largeur naturelle des images
+                width: "auto",
                 display: "flex",
                 justifyContent: "center",
               }}
             >
-              <img
-                src={image.url}
-                alt={image.alt || `Image ${idx + 1}`}
-                style={{
-                  width: "auto",
-                  height: "70vh", // Adapte la hauteur à la vue
-                  objectFit: "contain", // Conserve la proportion naturelle
-                  borderRadius: "10px",
-                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                  boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)", // Ombre légère
-                }}
-              />
+              {item.isAd ? (
+                <AdSlide /> // Affiche le composant publicitaire
+              ) : (
+                <img
+                  src={item.url}
+                  alt={item.alt || `Image ${idx + 1}`}
+                  style={{
+                    width: "auto",
+                    height: "70vh",
+                    objectFit: "contain",
+                    borderRadius: "10px",
+                    transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
+                  }}
+                />
+              )}
             </SwiperSlide>
           ))}
         </Swiper>
